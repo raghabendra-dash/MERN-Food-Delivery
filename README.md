@@ -1,13 +1,13 @@
-# TOMATO - Food Ordering Website
+## TOMATO - Food Delivery Website
 
- This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering by utilizing local storage for managing user sessions and URL search parameters for handling payment verification and order tracking.
+   This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering by utilizing local storage for managing user sessions and URL search parameters for handling payment verification and order tracking.
 
-## Demo
+### Demo
 
-- User Panel: [https://food-delivery-frontend-s2l9.onrender.com/](https://food-delivery-frontend-s2l9.onrender.com/)
-- Admin Panel: [https://food-delivery-admin-wrme.onrender.com/](https://food-delivery-admin-wrme.onrender.com/)
+- User Panel: [Click Here](https://food-delivery-frontend-s2l9.onrender.com)
+- Admin Panel: [Click Here](https://food-delivery-admin-wrme.onrender.com/)
 
-## Features
+### Features
 
 - User Panel
 - Admin Panel
@@ -26,7 +26,7 @@
 - Role-Based Identification
 
 
-## Screenshots
+### Screenshots
 
 ![Hero](https://i.ibb.co/59cwY75/food-hero.png)
 - Hero Section
@@ -40,7 +40,7 @@
 ![Login](https://i.ibb.co/s6PgwkZ/food-login.png)
 - Login Popup
 
-## Run Locally
+### Run Locally
 
 Clone the project
 
@@ -106,7 +106,7 @@ Start the Backend server
 ```bash
     npm start
 ```
-## Tech Stack
+### Tech Stack
 * [React](https://reactjs.org/)
 * [Node.js](https://nodejs.org/en)
 * [Express.js](https://expressjs.com/)
@@ -115,11 +115,11 @@ Start the Backend server
 * [JWT-Authentication](https://jwt.io/introduction)
 * [Multer](https://www.npmjs.com/package/multer)
 
-## Deployment
+### Deployment
 
 The application is deployed on Render.
 
 
-## Feedback
+### Feedback
 
 If you have any feedback, please reach out to me [here](https://www.linkedin.com/in/raghabendra779)

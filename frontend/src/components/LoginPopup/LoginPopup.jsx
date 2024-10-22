@@ -1,12 +1,13 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import "./LoginPopup.css";
 import { assets } from "../../assets/frontend_assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 import axios from "axios";
 import { toast } from "react-toastify";
+import PropTypes from "prop-types"; 
 
 const LoginPopup = ({ setShowLogin }) => {
-  const {url, setToken } = useContext(StoreContext);
+  const { url, setToken } = useContext(StoreContext);
   const [currentState, setCurrentState] = useState("Login");
   const [data, setData] = useState({
     name: "",
@@ -32,12 +33,13 @@ const LoginPopup = ({ setShowLogin }) => {
     if (response.data.success) {
       setToken(response.data.token);
       localStorage.setItem("token", response.data.token);
-      toast.success("Login Successfully")
+      toast.success("Login Successfully");
       setShowLogin(false);
-    }else{
+    } else {
       toast.error(response.data.message);
     }
   };
+
   return (
     <div className="login-popup">
       <form onSubmit={onLogin} className="login-popup-container">
@@ -84,7 +86,7 @@ const LoginPopup = ({ setShowLogin }) => {
         </button>
         <div className="login-popup-condition">
           <input type="checkbox" required />
-          <p>By continuing, i agree to the terms of use & privacy policy.</p>
+          <p>By continuing, I agree to the terms of use & privacy policy.</p>
         </div>
         {currentState === "Login" ? (
           <p>
@@ -100,6 +102,11 @@ const LoginPopup = ({ setShowLogin }) => {
       </form>
     </div>
   );
+};
+
+// Define prop types
+LoginPopup.propTypes = {
+  setShowLogin: PropTypes.func.isRequired, 
 };
 
 export default LoginPopup;

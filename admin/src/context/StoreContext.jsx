@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import PropTypes from "prop-types"; // Import PropTypes
+import PropTypes from "prop-types"; 
 
 export const StoreContext = createContext(null);
 
@@ -13,7 +13,7 @@ const StoreContextProvider = (props) => {
         setToken(localStorage.getItem("token"));
       }
       if (localStorage.getItem("admin")) {
-        setAdmin(localStorage.getItem("admin") === 'true'); // Convert to boolean
+        setAdmin(localStorage.getItem("admin") === 'true');
       }
     }
     loadData();

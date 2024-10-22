@@ -53,7 +53,7 @@ const Add = ({ url }) => {
       toast.error("Please Login First");
       navigate("/");
     }
-  }, []);
+  }, [admin, token, navigate]); // Added admin, token, and navigate as dependencies
 
   return (
     <div className="add">
@@ -120,7 +120,7 @@ const Add = ({ url }) => {
             <input
               onChange={onChangeHandler}
               value={data.price}
-              type="Number"
+              type="number"
               name="price"
               placeholder="$20"
               required
@@ -135,7 +135,7 @@ const Add = ({ url }) => {
   );
 };
 
-// prop types 
+// Prop types 
 Add.propTypes = {
   url: PropTypes.string.isRequired, 
 };

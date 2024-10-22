@@ -1,5 +1,5 @@
 import "./Orders.css";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext, useCallback } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { assets } from "../../assets/assets";
@@ -12,14 +12,16 @@ const Orders = ({ url }) => {
   const { token, admin } = useContext(StoreContext);
   const [orders, setOrders] = useState([]);
 
-  const fetchAllOrder = async () => {
+  const fetchAllOrder = useCallback(async () => {
     const response = await axios.get(`${url}/api/order/list`, {
       headers: { token },
     });
     if (response.data.success) {
       setOrders(response.data.data);
+    } else {
+      toast.error("Failed to fetch orders");
     }
-  };
+  }, [url, token]); // Add url and token as dependencies
 
   const statusHandler = async (event, orderId) => {
     const response = await axios.post(
@@ -42,9 +44,10 @@ const Orders = ({ url }) => {
     if (!admin && !token) {
       toast.error("Please Login First");
       navigate("/");
+    } else {
+      fetchAllOrder(); // Call fetchAllOrder here
     }
-    fetchAllOrder();
-  }, [admin, navigate, token]); 
+  }, [admin, navigate, token, fetchAllOrder]); // Add fetchAllOrder to the dependency array
 
   return (
     <div className="order add">
@@ -97,7 +100,7 @@ const Orders = ({ url }) => {
   );
 };
 
-// prop types 
+// Prop types 
 Orders.propTypes = {
   url: PropTypes.string.isRequired, 
 };

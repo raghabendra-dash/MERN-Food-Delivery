@@ -1,6 +1,7 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import PropTypes from "prop-types"; 
 
 export const StoreContext = createContext(null);
 
@@ -17,15 +18,15 @@ const StoreContextProvider = (props) => {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     }
     if (token) {
-      const response=await axios.post(
+      const response = await axios.post(
         url + "/api/cart/add",
         { itemId },
         { headers: { token } }
       );
-      if(response.data.success){
-        toast.success("item Added to Cart")
-      }else{
-        toast.error("Something went wrong")
+      if (response.data.success) {
+        toast.success("item Added to Cart");
+      } else {
+        toast.error("Something went wrong");
       }
     }
   };
@@ -33,15 +34,15 @@ const StoreContextProvider = (props) => {
   const removeFromCart = async (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if (token) {
-      const response= await axios.post(
+      const response = await axios.post(
         url + "/api/cart/remove",
         { itemId },
         { headers: { token } }
       );
-      if(response.data.success){
-        toast.success("item Removed from Cart")
-      }else{
-        toast.error("Something went wrong")
+      if (response.data.success) {
+        toast.success("item Removed from Cart");
+      } else {
+        toast.error("Something went wrong");
       }
     }
   };
@@ -97,10 +98,17 @@ const StoreContextProvider = (props) => {
     token,
     setToken,
   };
+
   return (
     <StoreContext.Provider value={contextValue}>
       {props.children}
     </StoreContext.Provider>
   );
 };
+
+// Define prop types for the provider
+StoreContextProvider.propTypes = {
+  children: PropTypes.node.isRequired, 
+};
+
 export default StoreContextProvider;

@@ -12,20 +12,20 @@ const Verify = () => {
     const { url } = useContext(StoreContext);
     const navigate = useNavigate();
 
-    const verifyPayment = async () => {
-        const response = await axios.post(url + "/api/order/verify", { success, orderId });
-        if (response.data.success) {
-            navigate("/myorders");
-            toast.success("Order Placed Successfully");
-        } else {
-            toast.error("Something went wrong");
-            navigate("/");
-        }
-    };
-
     useEffect(() => {
+        const verifyPayment = async () => {
+            const response = await axios.post(url + "/api/order/verify", { success, orderId });
+            if (response.data.success) {
+                navigate("/myorders");
+                toast.success("Order Placed Successfully");
+            } else {
+                toast.error("Something went wrong");
+                navigate("/");
+            }
+        };
+
         verifyPayment();
-    }, [success, orderId]); 
+    }, [success, orderId, navigate, url]); // Added necessary dependencies
 
     return (
         <div className='verify'>

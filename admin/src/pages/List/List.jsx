@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import "./List.css";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -12,14 +12,14 @@ const List = ({ url }) => {
   const { token, admin } = useContext(StoreContext);
   const [list, setList] = useState([]);
 
-  const fetchList = async () => {
+  const fetchList = useCallback(async () => {
     const response = await axios.get(`${url}/api/food/list`);
     if (response.data.success) {
       setList(response.data.data);
     } else {
       toast.error("Error");
     }
-  };
+  }, [url]); // Add url as a dependency
 
   const removeFood = async (foodId) => {
     const response = await axios.post(
@@ -39,9 +39,10 @@ const List = ({ url }) => {
     if (!admin && !token) {
       toast.error("Please Login First");
       navigate("/");
+    } else {
+      fetchList(); // Call fetchList here
     }
-    fetchList();
-  }, [admin, navigate, token]); 
+  }, [admin, navigate, token, fetchList]); // Add fetchList to the dependency array
 
   return (
     <div className="list add flex-col">
@@ -70,7 +71,7 @@ const List = ({ url }) => {
   );
 };
 
-// prop types 
+// Prop types 
 List.propTypes = {
   url: PropTypes.string.isRequired, 
 };

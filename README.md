@@ -4,7 +4,7 @@
 
 ### Demo
 
-- User Panel: [Click Here](https://mern-food-delivery-frontend-bgwp.onrender.com/)
+- User Panel: [Click Here](https://mern-food-delivery-frontend.vercel.app/)
 - Admin Panel: [Click Here](https://mern-food-delivery-admin-421q.onrender.com/)
 
 ### Features

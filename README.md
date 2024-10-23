@@ -70,6 +70,13 @@ Install dependencies (backend)
     cd backend
     npm install
 ```
+Install dependencies (root)
+
+```bash
+    cd ..
+    npm run install-all 
+```
+
 Setup Environment Vaiables
 
 ```Make .env file in "backend" folder and store environment Variables
@@ -106,6 +113,13 @@ Start the Backend server
 ```bash
     npm start
 ```
+
+Start all concurrently
+
+```bash
+    npm run start
+```
+
 ### Tech Stack
 * [React](https://reactjs.org/)
 * [Node.js](https://nodejs.org/en)

@@ -5,7 +5,7 @@
 ### Demo
 
 - User Panel: [Click Here](https://food-delivery-frontend-s2l9.onrender.com)
-- Admin Panel: [Click Here](https://mern-food-delivery-admin-421q.onrender.com/)
+/*Admin Panel: [Click Here](https://mern-food-delivery-admin-421q.onrender.com/)*/
 
 ### Features
 

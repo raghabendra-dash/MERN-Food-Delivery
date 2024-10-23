@@ -127,7 +127,6 @@ Start all concurrently
 * [Mongodb](https://www.mongodb.com/)
 * [Stripe](https://stripe.com/)
 * [JWT-Authentication](https://jwt.io/introduction)
-* [Multer](https://www.npmjs.com/package/multer)
 * [FreePik](https://www.freepik.com/)
 
 ### Deployment

@@ -114,10 +114,11 @@ Start the Backend server
 * [Stripe](https://stripe.com/)
 * [JWT-Authentication](https://jwt.io/introduction)
 * [Multer](https://www.npmjs.com/package/multer)
+* [FreePik](https://www.freepik.com/)
 
 ### Deployment
 
-The application is deployed on Render.
+The application is deployed on Vercel and Render.
 
 
 ### Feedback

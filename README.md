@@ -11,7 +11,6 @@
 
 - User Panel
 - Admin Panel
-- JWT Authentication
 - Password Hashing with Bcrypt
 - Stripe Payment Integration
 - Login/Signup
@@ -20,10 +19,6 @@
 - Place Order
 - Order Management
 - Products Management
-- Filter Food Products
-- Login/Signup
-- REST APIs
-- Role-Based Identification
 
 
 ### Screenshots

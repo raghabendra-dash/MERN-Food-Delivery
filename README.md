@@ -120,7 +120,6 @@ Start all concurrently
 * [React](https://reactjs.org/)
 * [Node.js](https://nodejs.org/en)
 * [Express.js](https://expressjs.com/)
-* [Mongodb](https://www.mongodb.com/)
 * [Stripe](https://stripe.com/)
 * [JWT-Authentication](https://jwt.io/introduction)
 * [FreePik](https://www.freepik.com/)

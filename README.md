@@ -1,6 +1,6 @@
 ## TOMATO - Food Delivery Website
 
-   This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering by utilizing local storage for managing user sessions and URL search parameters for handling payment verification and order tracking.There is an Admin panel in which admin user can add food items or remove food items on Tomato website. User also check the status of their food in MyOrders page. Clicking on the cart item will be redirected user to Stripe payment page.
+   This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering by managing user sessions and URL search parameters for handling payment verification and order tracking.There is an Admin panel in which admin user can add food items or remove food items on Tomato website. User also check the status of their food in MyOrders page. Clicking on the cart item will be redirected user to Stripe payment page.
 
 ### Demo 
 

@@ -4,7 +4,8 @@
 
 ### Demo
 
-- User Panel: [Click Here](https://food-delivery-website-gamma.vercel.app/)
+- User Panel: [Click Here](https://mern-food-delivery-frontend.vercel.app/)
+  <!--(https://food-delivery-website-gamma.vercel.app/)-->
   <!--(https://mern-food-delivery-frontend.vercel.app/)-->
 - Admin Panel: [Click Here](https://food-delivery-website-admin.vercel.app/)
   <!--(https://mern-food-delivery-admin-421q.onrender.com/)-->

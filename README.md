@@ -4,7 +4,7 @@
 
 ### Demo
 
-- User Panel: [Click Here](https://app-food-tomato.netlify.app)
+- User Panel: [Click Here](https://food-delivery-website-hazel.vercel.app/)
   <!--(https://food-delivery-website-gamma.vercel.app/)-->
   <!--(https://mern-food-delivery-frontend.vercel.app/)-->
 - Admin Panel: [Click Here](https://food-delivery-website-admin.vercel.app/)

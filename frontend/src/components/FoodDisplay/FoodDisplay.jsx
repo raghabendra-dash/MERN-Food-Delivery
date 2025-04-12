@@ -30,7 +30,6 @@ const FoodDisplay = ({ category }) => {
   );
 };
 
-// Define prop types
 FoodDisplay.propTypes = {
   category: PropTypes.string.isRequired, 
 };

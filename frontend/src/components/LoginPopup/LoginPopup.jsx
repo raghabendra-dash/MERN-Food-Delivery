@@ -103,8 +103,6 @@ const LoginPopup = ({ setShowLogin }) => {
     </div>
   );
 };
-
-// Define prop types
 LoginPopup.propTypes = {
   setShowLogin: PropTypes.func.isRequired, 
 };

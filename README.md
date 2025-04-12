@@ -2,14 +2,14 @@
 
    This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering by managing user sessions and URL search parameters for handling payment verification and order tracking.There is an Admin panel in which admin user can add food items or remove food items on Tomato website. User also check the status of their food in MyOrders page. Clicking on the cart item will be redirected user to Stripe payment page.
 
-### Demo https://mern-food-delivery-frontend-bgwp.onrender.com/
+### Demo 
 
 - User Panel: [Click Here](https://mern-food-delivery-frontend-bgwp.onrender.com/)
   <!--(https://food-delivery-website-gamma.vercel.app/)-->
   <!--(https://food-delivery-website-hazel.vercel.app/)-->
   <!--(https://mern-food-delivery-frontend.vercel.app/)-->
   <!--(https://tomato-food-delivery-tanmay-312s-projects.vercel.app/)-->
--  Admin Panel: not provided for security and safety purpose.
+-  Admin Panel: Not provided for security and safety purpose.
   
   <!--[Click Here](https://food-delivery-website-admin.vercel.app/)-->
   <!--(https://mern-food-delivery-admin-421q.onrender.com/)-->

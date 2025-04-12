@@ -103,6 +103,7 @@ const LoginPopup = ({ setShowLogin }) => {
     </div>
   );
 };
+
 LoginPopup.propTypes = {
   setShowLogin: PropTypes.func.isRequired, 
 };

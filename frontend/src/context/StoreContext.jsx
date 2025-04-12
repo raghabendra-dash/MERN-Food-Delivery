@@ -65,7 +65,6 @@ const StoreContextProvider = (props) => {
     } else {
       alert("Error! Products are not fetching..");
     }
-  }
   };
 
   const loadCardData = async (token) => {

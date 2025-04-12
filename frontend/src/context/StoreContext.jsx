@@ -64,9 +64,7 @@ const StoreContextProvider = (props) => {
       setFoodList(response.data.data);
     } else {
       alert("Error! Products are not fetching..");
-    }catch (error) {
-    console.error("Error fetching food list:", error); 
-    toast.error("Error fetching products.");
+    }
   }
   };
 

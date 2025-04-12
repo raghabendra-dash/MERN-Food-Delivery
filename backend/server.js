@@ -12,7 +12,7 @@ const port =process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors({ 
-  origin: "https://mern-food-delivery-frontend.vercel.app",
+  origin: "https://food-delivery-frontend-s2l9.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }));

@@ -6,7 +6,6 @@ import authMiddleware from "../middleware/auth.js";
 const foodRouter = express.Router();
 
 // Image Storage Engine
-
 const storage= multer.diskStorage({
     destination:"uploads",
     filename:(req,file,cb)=>{

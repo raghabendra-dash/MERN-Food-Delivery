@@ -84,7 +84,6 @@ const Navbar = ({ setShowLogin }) => {
   );
 };
 
-// Define prop types
 Navbar.propTypes = {
   setShowLogin: PropTypes.func.isRequired, 
 };

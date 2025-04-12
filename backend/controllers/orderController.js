@@ -4,9 +4,8 @@ import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-// placing user order for frontend
 const placeOrder = async (req, res) => {
-  const frontend_url = "https://tomato-food-delivery-tanmay-312s-projects.vercel.app";
+  const frontend_url = "https://mern-food-delivery-frontend-bgwp.onrender.com/";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
@@ -69,7 +68,6 @@ const verifyOrder = async (req, res) => {
   }
 };
 
-// user orders for frontend
 const userOrders = async (req, res) => {
   try {
     const orders = await orderModel.find({ userId: req.body.userId });
@@ -80,7 +78,6 @@ const userOrders = async (req, res) => {
   }
 };
 
-// Listing orders for admin pannel
 const listOrders = async (req, res) => {
   try {
     let userData = await userModel.findById(req.body.userId);
@@ -96,7 +93,6 @@ const listOrders = async (req, res) => {
   }
 };
 
-// api for updating status
 const updateStatus = async (req, res) => {
   try {
     let userData = await userModel.findById(req.body.userId);

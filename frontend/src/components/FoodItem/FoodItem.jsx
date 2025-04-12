@@ -38,7 +38,6 @@ const FoodItem = ({ id, name, price, description, image }) => {
   );
 };
 
-// Define prop types
 FoodItem.propTypes = {
   id: PropTypes.string.isRequired,         
   name: PropTypes.string.isRequired,      

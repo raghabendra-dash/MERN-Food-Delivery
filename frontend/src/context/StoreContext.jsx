@@ -63,7 +63,7 @@ const StoreContextProvider = (props) => {
     if (response.data.success) {
       setFoodList(response.data.data);
     } else {
-      alert("Error! Products are not fetching..");
+      alert("TimeOut! Too Much Contents.");
     }
   };
 

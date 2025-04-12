@@ -11,8 +11,10 @@ const app = express();
 const port =process.env.PORT || 4000;
 
 app.use(express.json());
-app.use(cors({ origin: "https://mern-food-delivery-frontend.vercel.app",
-  credentials: true
+app.use(cors({ 
+  origin: "https://mern-food-delivery-frontend.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
 }));
 connectDB();
 
@@ -23,7 +25,7 @@ app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 
 app.get("/", (req, res) => {
-  res.send("API Working");
+  res.send("API Working...");
 });
 
 app.listen(port, () => {
